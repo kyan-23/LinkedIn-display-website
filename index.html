@@ -1,13 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>linkedin-display</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyan Yeng — Portfolio</title>
+  <meta name="description" content="Kyan Yeng's professional portfolio — showcasing skills, experience, and achievements." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-toggle-icon sun">☀️</span>
+    <span class="theme-toggle-icon moon">🌙</span>
+  </button>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="avatar" id="avatar">KY</div>
+      <h1 id="hero-name">Kyan Yeng</h1>
+      <p class="headline" id="hero-headline">Aspiring Software Developer · Problem Solver · Tech Enthusiast</p>
+      <p class="location" id="hero-location">📍 United States</p>
+
+      <div class="hero-stats" id="hero-stats"></div>
+
+      <a
+        class="connect-btn"
+        href="https://www.linkedin.com/in/kyan-yeng-405ab0419/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Connect on LinkedIn →
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page" id="main-content"></main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      Built by Kyan Yeng · View my
+      <a href="https://www.linkedin.com/in/kyan-yeng-405ab0419/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>
